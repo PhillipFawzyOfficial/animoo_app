@@ -1,3 +1,4 @@
+import 'package:animoo_app/core/utils/app_images.dart';
 import 'package:animoo_app/views/auth/views/login_view.dart';
 import 'package:flutter/material.dart';
 
@@ -22,6 +23,6 @@ class _SplashViewBodyState extends State<SplashViewBody> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Image.asset('assets/images/logo.png'));
+    return Center(child: Image.asset(AppImages.logo));
   }
 }
