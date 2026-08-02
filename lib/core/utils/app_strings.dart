@@ -6,4 +6,5 @@ class AppStrings {
   static const String enterYourPassword = 'Enter your Password';
   //! Log in String
   static const String login = 'Log In';
+  static const String forgetPassword = 'Forget Password....?';
 }
