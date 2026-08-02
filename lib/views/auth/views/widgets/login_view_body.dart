@@ -1,5 +1,7 @@
 import 'package:animoo_app/core/utils/app_colors.dart';
 import 'package:animoo_app/core/utils/app_images.dart';
+import 'package:animoo_app/core/utils/app_strings.dart';
+import 'package:animoo_app/core/widgets/custom_text_form_field.dart';
 import 'package:animoo_app/views/auth/views/widgets/title_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -19,8 +21,24 @@ class LoginViewBody extends StatelessWidget {
             SizedBox(height: 9.15),
             TitleAuth(),
             Text(
-              'Email',
+              AppStrings.email,
               style: TextStyle(fontSize: 16, color: AppColors.grayColor),
+            ),
+            SizedBox(height: 6),
+            CustomTextFormField(hint: AppStrings.enterYourEmailAddress),
+            SizedBox(height: 16),
+            Text(
+              AppStrings.password,
+              style: TextStyle(fontSize: 16, color: AppColors.grayColor),
+            ),
+            SizedBox(height: 6),
+            CustomTextFormField(
+              obscureText: true,
+              hint: AppStrings.enterYourPassword,
+              suffix: IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.remove_red_eye),
+              ),
             ),
           ],
         ),
