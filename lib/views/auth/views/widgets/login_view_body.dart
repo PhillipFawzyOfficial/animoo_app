@@ -1,7 +1,9 @@
 import 'package:animoo_app/core/utils/app_colors.dart';
 import 'package:animoo_app/core/utils/app_images.dart';
 import 'package:animoo_app/core/utils/app_strings.dart';
+import 'package:animoo_app/core/widgets/custom_elevated_button.dart';
 import 'package:animoo_app/core/widgets/custom_text_form_field.dart';
+import 'package:animoo_app/views/auth/views/widgets/forget_password.dart';
 import 'package:animoo_app/views/auth/views/widgets/title_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -40,6 +42,9 @@ class LoginViewBody extends StatelessWidget {
                 icon: Icon(Icons.remove_red_eye),
               ),
             ),
+            ForgetPassword(),
+            SizedBox(height: 31),
+            CustomElevatedButton(),
           ],
         ),
       ),
