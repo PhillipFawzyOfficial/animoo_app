@@ -1,6 +1,7 @@
 import 'package:animoo_app/core/utils/app_colors.dart';
 import 'package:animoo_app/core/utils/app_strings.dart';
 import 'package:animoo_app/views/auth/views/widgets/login_view_body.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatelessWidget {
@@ -24,6 +25,7 @@ class LoginView extends StatelessWidget {
                 ),
                 TextSpan(text: ' '),
                 TextSpan(
+                  recognizer: TapGestureRecognizer()..onTap = () {},
                   text: AppStrings.signUpNow,
                   style: TextStyle(
                     color: AppColors.primaryColor,
