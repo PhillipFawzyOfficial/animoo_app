@@ -1,5 +1,5 @@
-import 'package:animoo_app/core/utils/app_colors.dart';
 import 'package:animoo_app/core/utils/app_strings.dart';
+import 'package:animoo_app/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
 class ForgetPassword extends StatelessWidget {
@@ -11,15 +11,7 @@ class ForgetPassword extends StatelessWidget {
       alignment: AlignmentGeometry.centerRight,
       child: TextButton(
         onPressed: () {},
-        child: Text(
-          AppStrings.forgetPassword,
-          style: TextStyle(
-            fontSize: 12,
-            fontWeight: FontWeight.w500,
-            decoration: TextDecoration.underline,
-            color: AppColors.primaryColor,
-          ),
-        ),
+        child: Text(AppStrings.forgetPassword, style: AppStyle.size12underline),
       ),
     );
   }

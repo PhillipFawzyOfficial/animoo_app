@@ -29,7 +29,6 @@ class LoginView extends StatelessWidget {
                   text: AppStrings.signUpNow,
                   style: TextStyle(
                     color: AppColors.primaryColor,
-                    decoration: TextDecoration.underline,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

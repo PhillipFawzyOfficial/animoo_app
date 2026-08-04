@@ -1,3 +1,4 @@
+import 'package:animoo_app/core/utils/app_style.dart';
 import 'package:animoo_app/views/splash/view/splash_view.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,8 @@ class AnimooApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(fontFamily: AppFonst.poppins),
       home: SplashView(),
     );
   }

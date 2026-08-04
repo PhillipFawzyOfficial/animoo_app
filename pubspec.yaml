@@ -76,7 +76,11 @@ flutter:
   fonts:
     - family: Otama-ep
       fonts:
-        - asset: assets\fonts\Otama-ep.otf
+        - asset: assets/fonts/Otama-ep.otf
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+  
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

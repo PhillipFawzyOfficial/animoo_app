@@ -1,4 +1,5 @@
 import 'package:animoo_app/core/utils/app_strings.dart';
+import 'package:animoo_app/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
 class TitleAuth extends StatelessWidget {
@@ -6,17 +7,10 @@ class TitleAuth extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(
+    return SizedBox(
       height: 90,
       child: Center(
-        child: Text(
-          AppStrings.login,
-          style: TextStyle(
-            fontSize: 38,
-            fontFamily: 'Otama-ep',
-            fontWeight: FontWeight.w400,
-          ),
-        ),
+        child: Text(AppStrings.login, style: AppStyle.titleAuthStylr),
       ),
     );
   }

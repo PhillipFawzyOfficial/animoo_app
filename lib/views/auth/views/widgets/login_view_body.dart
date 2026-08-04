@@ -1,6 +1,6 @@
-import 'package:animoo_app/core/utils/app_colors.dart';
 import 'package:animoo_app/core/utils/app_images.dart';
 import 'package:animoo_app/core/utils/app_strings.dart';
+import 'package:animoo_app/core/utils/app_style.dart';
 import 'package:animoo_app/core/widgets/custom_elevated_button.dart';
 import 'package:animoo_app/core/widgets/custom_text_form_field.dart';
 import 'package:animoo_app/views/auth/views/widgets/forget_password.dart';
@@ -22,17 +22,11 @@ class LoginViewBody extends StatelessWidget {
             Center(child: Image.asset(AppImages.logo, width: 72)),
             SizedBox(height: 9.15),
             TitleAuth(),
-            Text(
-              AppStrings.email,
-              style: TextStyle(fontSize: 16, color: AppColors.grayColor),
-            ),
+            Text(AppStrings.email, style: AppStyle.labelStyle),
             SizedBox(height: 6),
             CustomTextFormField(hint: AppStrings.enterYourEmailAddress),
             SizedBox(height: 16),
-            Text(
-              AppStrings.password,
-              style: TextStyle(fontSize: 16, color: AppColors.grayColor),
-            ),
+            Text(AppStrings.password, style: AppStyle.labelStyle),
             SizedBox(height: 6),
             CustomTextFormField(
               obscureText: true,

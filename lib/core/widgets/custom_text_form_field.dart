@@ -1,4 +1,5 @@
 import 'package:animoo_app/core/utils/app_colors.dart';
+import 'package:animoo_app/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatelessWidget {
@@ -22,7 +23,7 @@ class CustomTextFormField extends StatelessWidget {
         filled: true,
         fillColor: Color(0xffF6F6F6),
         hint: Text(hint),
-        hintStyle: TextStyle(color: AppColors.hintColor, fontSize: 12),
+        hintStyle: AppStyle.hintStyle,
         border: buildBorder(borderColor: Colors.black),
         enabledBorder: buildBorder(borderColor: Colors.black),
         focusedBorder: buildBorder(borderColor: AppColors.primaryColor),
