@@ -10,7 +10,7 @@ class TitleAuth extends StatelessWidget {
     return SizedBox(
       height: 90,
       child: Center(
-        child: Text(AppStrings.login, style: AppStyle.titleAuthStylr),
+        child: Text(AppStrings.login, style: AppStyle.titleAuthStyle),
       ),
     );
   }

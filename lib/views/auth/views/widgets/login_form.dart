@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class LoginForm extends StatelessWidget {
   const LoginForm({super.key, required this.formKey});
 
- final GlobalKey<FormState> formKey;
+  final GlobalKey<FormState> formKey;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,10 @@ class LoginForm extends StatelessWidget {
         children: [
           Text(AppStrings.email, style: AppStyle.labelStyle),
           SizedBox(height: 6),
-          CustomTextFormField(hint: AppStrings.enterYourEmailAddress),
+          CustomTextFormField(
+            hint: AppStrings.enterYourEmailAddress,
+            keyboardType: TextInputType.emailAddress,
+          ),
           SizedBox(height: 16),
           Text(AppStrings.password, style: AppStyle.labelStyle),
           SizedBox(height: 6),
@@ -27,6 +30,7 @@ class LoginForm extends StatelessWidget {
               onPressed: () {},
               icon: Icon(Icons.remove_red_eye),
             ),
+            keyboardType: TextInputType.visiblePassword,
           ),
         ],
       ),

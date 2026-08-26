@@ -2,7 +2,7 @@ import 'package:animoo_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class AppStyle {
-  static final TextStyle titleAuthStylr = TextStyle(
+  static final TextStyle titleAuthStyle = TextStyle(
     fontSize: 38,
     fontFamily: AppFonst.otamaEp,
     fontWeight: FontWeight.w400,

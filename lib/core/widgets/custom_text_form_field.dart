@@ -8,15 +8,21 @@ class CustomTextFormField extends StatelessWidget {
     required this.hint,
     this.suffix,
     this.obscureText = false,
+    required this.keyboardType,
   });
 
   final String hint;
   final Widget? suffix;
   final bool obscureText;
+  final TextInputType keyboardType;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      onTapOutside: (event) {
+        FocusScope.of(context).unfocus();
+      },
+      keyboardType: keyboardType,
       validator: (value) {
         if (value == null || value.isEmpty) {
           return 'Please $hint';
