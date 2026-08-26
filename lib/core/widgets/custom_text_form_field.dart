@@ -17,6 +17,12 @@ class CustomTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return 'Please $hint';
+        }
+        return null;
+      },
       obscureText: obscureText,
       decoration: InputDecoration(
         suffixIcon: suffix,
