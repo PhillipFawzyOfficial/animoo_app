@@ -1,5 +1,5 @@
 import 'package:animoo_app/core/utils/app_images.dart';
-
+import 'package:animoo_app/core/utils/app_strings.dart';
 import 'package:animoo_app/core/widgets/custom_elevated_button.dart';
 import 'package:animoo_app/views/auth/views/widgets/forget_password.dart';
 import 'package:animoo_app/views/auth/views/widgets/login_form.dart';
@@ -20,7 +20,7 @@ class LoginViewBody extends StatelessWidget {
           children: [
             Center(child: Image.asset(AppImages.logo, width: 72)),
             SizedBox(height: 9.15),
-            TitleAuth(),
+            TitleAuth(title: AppStrings.login,),
             LoginForm(formKey: GlobalKey<FormState>()),
             ForgetPassword(),
             SizedBox(height: 31),

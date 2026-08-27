@@ -9,4 +9,6 @@ class AppStrings {
   static const String forgetPassword = 'Forget Password....?';
   static const String dontHaveAnAccount = 'Don’t have an account?';
   static const String signUpNow = 'Sign up now';
+  //! Signup in String
+  static const String signUp = 'Sign Up';
 }

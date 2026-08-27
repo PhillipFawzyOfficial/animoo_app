@@ -1,3 +1,4 @@
+import 'package:animoo_app/views/auth/views/widgets/signup_view_body.dart';
 import 'package:flutter/material.dart';
 
 class SignupView extends StatelessWidget {
@@ -5,6 +6,6 @@ class SignupView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return const Scaffold(body: SignupViewBody());
   }
 }
