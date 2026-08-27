@@ -22,13 +22,13 @@ class CustomTextFormField extends StatelessWidget {
       onTapOutside: (event) {
         FocusScope.of(context).unfocus();
       },
-      keyboardType: keyboardType,
       validator: (value) {
         if (value == null || value.isEmpty) {
           return 'Please $hint';
         }
         return null;
       },
+      keyboardType: keyboardType,
       obscureText: obscureText,
       decoration: InputDecoration(
         suffixIcon: suffix,
