@@ -1,5 +1,7 @@
 import 'package:animoo_app/core/utils/app_images.dart';
 import 'package:animoo_app/core/utils/app_strings.dart';
+import 'package:animoo_app/views/auth/views/widgets/signup_form.dart';
+
 import 'package:animoo_app/views/auth/views/widgets/title_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -12,9 +14,12 @@ class SignupViewBody extends StatelessWidget {
       child: Padding(
         padding: EdgeInsetsGeometry.symmetric(horizontal: 18),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Center(child: Image.asset(AppImages.logo)),
+            Center(child: Image.asset(AppImages.logo, width: 72)),
+            SizedBox(height: 9.15),
             TitleAuth(title: AppStrings.signUp),
+            SignupForm(formKey: GlobalKey()),
           ],
         ),
       ),

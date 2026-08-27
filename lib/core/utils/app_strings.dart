@@ -11,4 +11,11 @@ class AppStrings {
   static const String signUpNow = 'Sign up now';
   //! Signup in String
   static const String signUp = 'Sign Up';
+  static const String firstName = 'First Name';
+  static const String enterYourFirstName = 'Enter your First Name';
+  static const String lastName = 'Last Name';
+  static const String enterYourLastName = 'Enter your Last Name';
+  static const String phone = 'Phone';
+  static const String enterYourPhone = 'Enter your Phone';
+  static const String confirmPassword = 'Confirm Password';
 }
