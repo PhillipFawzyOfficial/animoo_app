@@ -18,4 +18,14 @@ class AppStrings {
   static const String phone = 'Phone';
   static const String enterYourPhone = 'Enter your Phone';
   static const String confirmPassword = 'Confirm Password';
+  static const String pleaseAddAllNecessaryCharactersToCreateSafePassword =
+      'Please add all necessary characters to create safe password.';
+
+  static const List<String> passwordRules = [
+    'Minimum characters 12.',
+    'One uppercase character.',
+    'One lowercase character.',
+    'One special character.',
+    'One number.',
+  ];
 }
