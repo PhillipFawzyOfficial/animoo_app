@@ -18,6 +18,7 @@ class SignupForm extends StatelessWidget {
           Text(AppStrings.firstName, style: AppStyle.labelStyle),
           SizedBox(height: 6),
           CustomTextFormField(
+            controller: TextEditingController(),
             hint: AppStrings.enterYourFirstName,
             keyboardType: TextInputType.emailAddress,
           ),
@@ -25,6 +26,7 @@ class SignupForm extends StatelessWidget {
           Text(AppStrings.lastName, style: AppStyle.labelStyle),
           SizedBox(height: 6),
           CustomTextFormField(
+            controller: TextEditingController(),
             hint: AppStrings.enterYourLastName,
             keyboardType: TextInputType.emailAddress,
           ),
@@ -32,6 +34,7 @@ class SignupForm extends StatelessWidget {
           Text(AppStrings.email, style: AppStyle.labelStyle),
           SizedBox(height: 6),
           CustomTextFormField(
+            controller: TextEditingController(),
             hint: AppStrings.enterYourEmailAddress,
             keyboardType: TextInputType.emailAddress,
           ),
@@ -39,6 +42,7 @@ class SignupForm extends StatelessWidget {
           Text(AppStrings.phone, style: AppStyle.labelStyle),
           SizedBox(height: 6),
           CustomTextFormField(
+            controller: TextEditingController(),
             hint: AppStrings.enterYourPhone,
             keyboardType: TextInputType.emailAddress,
           ),
@@ -46,6 +50,7 @@ class SignupForm extends StatelessWidget {
           Text(AppStrings.password, style: AppStyle.labelStyle),
           SizedBox(height: 6),
           CustomTextFormField(
+            controller: TextEditingController(),
             obscureText: true,
             suffix: IconButton(
               onPressed: () {},
@@ -58,6 +63,7 @@ class SignupForm extends StatelessWidget {
           Text(AppStrings.confirmPassword, style: AppStyle.labelStyle),
           SizedBox(height: 6),
           CustomTextFormField(
+            controller: TextEditingController(),
             obscureText: true,
             suffix: IconButton(
               onPressed: () {},

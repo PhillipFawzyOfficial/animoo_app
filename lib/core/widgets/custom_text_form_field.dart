@@ -8,17 +8,19 @@ class CustomTextFormField extends StatelessWidget {
     required this.hint,
     this.suffix,
     this.obscureText = false,
-    required this.keyboardType,
+    required this.keyboardType, required this.controller,
   });
 
   final String hint;
   final Widget? suffix;
   final bool obscureText;
   final TextInputType keyboardType;
+  final TextEditingController controller;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       onTapOutside: (event) {
         FocusScope.of(context).unfocus();
       },

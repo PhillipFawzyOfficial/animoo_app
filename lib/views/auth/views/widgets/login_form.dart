@@ -17,6 +17,7 @@ class LoginForm extends StatelessWidget {
           Text(AppStrings.email, style: AppStyle.labelStyle),
           SizedBox(height: 6),
           CustomTextFormField(
+            controller: TextEditingController(),
             hint: AppStrings.enterYourEmailAddress,
             keyboardType: TextInputType.emailAddress,
           ),
@@ -24,6 +25,7 @@ class LoginForm extends StatelessWidget {
           Text(AppStrings.password, style: AppStyle.labelStyle),
           SizedBox(height: 6),
           CustomTextFormField(
+            controller: TextEditingController(),
             obscureText: true,
             hint: AppStrings.enterYourPassword,
             suffix: IconButton(
