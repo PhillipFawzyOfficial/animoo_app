@@ -1,6 +1,7 @@
 import 'package:animoo_app/core/utils/app_strings.dart';
 import 'package:animoo_app/core/utils/app_style.dart';
 import 'package:animoo_app/core/widgets/custom_text_form_field.dart';
+import 'package:animoo_app/views/auth/views/widgets/password_rules.dart';
 import 'package:flutter/material.dart';
 
 class SignupForm extends StatelessWidget {
@@ -59,7 +60,9 @@ class SignupForm extends StatelessWidget {
             hint: AppStrings.enterYourPassword,
             keyboardType: TextInputType.emailAddress,
           ),
-          SizedBox(height: 16),
+          SizedBox(height: 8),
+          PasswordRules(),
+         
           Text(AppStrings.confirmPassword, style: AppStyle.labelStyle),
           SizedBox(height: 6),
           CustomTextFormField(
