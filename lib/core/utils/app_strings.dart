@@ -20,6 +20,9 @@ class AppStrings {
   static const String confirmPassword = 'Confirm Password';
   static const String pleaseAddAllNecessaryCharactersToCreateSafePassword =
       'Please add all necessary characters to create safe password.';
+  static const String uploadImageForYourProfile =
+      'Upload Image For Your Profile';
+  static const String selectFile = 'Select file';
 
   static const List<String> passwordRules = [
     'Minimum characters 12.',

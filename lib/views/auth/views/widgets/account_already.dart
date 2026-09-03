@@ -18,7 +18,7 @@ class AccountAlready extends StatelessWidget {
                 text: ('Have an account already?'),
                 style: TextStyle(color: Color(0xff828282)),
               ),
-              TextSpan(text: ' '),
+              TextSpan(text: '  '),
               TextSpan(
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {

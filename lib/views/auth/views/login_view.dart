@@ -24,7 +24,7 @@ class LoginView extends StatelessWidget {
                   text: AppStrings.dontHaveAnAccount,
                   style: TextStyle(color: Color(0xff828282)),
                 ),
-                TextSpan(text: ' '),
+                TextSpan(text: '  '),
                 TextSpan(
                   recognizer: TapGestureRecognizer()
                     ..onTap = () {

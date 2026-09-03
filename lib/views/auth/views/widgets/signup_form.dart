@@ -79,8 +79,8 @@ class SignupForm extends StatelessWidget {
           ),
           SizedBox(height: 16),
           Text(
-            'Upload Image For Your Profile',
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+            AppStrings.uploadImageForYourProfile,
+            style: AppStyle.labelStyle,
           ),
           SizedBox(height: 8),
           SizedBox(
@@ -100,14 +100,7 @@ class SignupForm extends StatelessWidget {
                   children: [
                     Icon(Icons.image, size: 28, color: AppColors.primaryColor),
                     SizedBox(height: 16),
-                    Text(
-                      'Select file',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.primaryColor,
-                      ),
-                    ),
+                    Text(AppStrings.selectFile, style: AppStyle.imageSelect),
                   ],
                 ),
               ),

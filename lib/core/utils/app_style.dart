@@ -23,6 +23,12 @@ class AppStyle {
     decoration: TextDecoration.underline,
     color: AppColors.primaryColor,
   );
+
+  static final TextStyle imageSelect = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: AppColors.primaryColor,
+  );
 }
 
 class AppFonst {
