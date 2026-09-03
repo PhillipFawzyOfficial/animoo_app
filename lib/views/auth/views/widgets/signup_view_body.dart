@@ -1,8 +1,8 @@
 import 'package:animoo_app/core/utils/app_images.dart';
 import 'package:animoo_app/core/utils/app_strings.dart';
 import 'package:animoo_app/core/widgets/custom_elevated_button.dart';
+import 'package:animoo_app/views/auth/views/widgets/account_already.dart';
 import 'package:animoo_app/views/auth/views/widgets/signup_form.dart';
-
 import 'package:animoo_app/views/auth/views/widgets/title_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +24,9 @@ class SignupViewBody extends StatelessWidget {
               SignupForm(formKey: GlobalKey()),
               SizedBox(height: 31),
               CustomElevatedButton(text: AppStrings.signUp),
+              SizedBox(height: 8),
+              AccountAlready(),
+              SizedBox(height: 20),
             ],
           ),
         ),
