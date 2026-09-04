@@ -31,4 +31,8 @@ class AppStrings {
     'One special character.',
     'One number.',
   ];
+
+  //! Forget Password String
+
+  static const String back = 'Back';
 }

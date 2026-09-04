@@ -29,6 +29,13 @@ class AppStyle {
     fontWeight: FontWeight.w500,
     color: AppColors.primaryColor,
   );
+
+  static final TextStyle appBarTitle = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w400,
+    color: AppColors.primaryColor,
+    fontFamily: AppFonst.otamaEp,
+  );
 }
 
 class AppFonst {
