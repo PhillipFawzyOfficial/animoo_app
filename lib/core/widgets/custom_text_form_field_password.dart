@@ -2,16 +2,18 @@ import 'package:animoo_app/core/utils/app_colors.dart';
 import 'package:animoo_app/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
-class CustomTextFormField extends StatelessWidget {
-  const CustomTextFormField({
+class CustomTextFormFieldPassword extends StatelessWidget {
+  const CustomTextFormFieldPassword({
     super.key,
     required this.hint,
-    required this.keyboardType,
+    required this.obscureText,
     required this.controller,
+    required this.onPressed,
   });
 
   final String hint;
-  final TextInputType keyboardType;
+  final bool obscureText;
+  final void Function() onPressed;
   final TextEditingController controller;
 
   @override
@@ -27,8 +29,13 @@ class CustomTextFormField extends StatelessWidget {
         }
         return null;
       },
-      keyboardType: keyboardType,
+      keyboardType: TextInputType.visiblePassword,
+      obscureText: obscureText,
       decoration: InputDecoration(
+        suffixIcon: IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.remove_red_eye),
+        ),
         filled: true,
         fillColor: Color(0xffF6F6F6),
         hint: Text(hint),
