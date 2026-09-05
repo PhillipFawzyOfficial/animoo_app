@@ -1,6 +1,6 @@
 import 'package:animoo_app/core/utils/app_strings.dart';
-import 'package:animoo_app/core/utils/app_style.dart';
-import 'package:animoo_app/core/widgets/custom_text_form_field.dart';
+import 'package:animoo_app/views/auth/views/widgets/label_text_field.dart';
+import 'package:animoo_app/views/auth/views/widgets/label_text_field_password.dart';
 import 'package:flutter/material.dart';
 
 class LoginForm extends StatelessWidget {
@@ -14,25 +14,19 @@ class LoginForm extends StatelessWidget {
       key: formKey,
       child: Column(
         children: [
-          Text(AppStrings.email, style: AppStyle.labelStyle),
-          SizedBox(height: 6),
-          CustomTextFormField(
-            controller: TextEditingController(),
+          LabelTextField(
+            title: AppStrings.email,
             hint: AppStrings.enterYourEmailAddress,
             keyboardType: TextInputType.emailAddress,
+            controller: TextEditingController(),
           ),
           SizedBox(height: 16),
-          Text(AppStrings.password, style: AppStyle.labelStyle),
-          SizedBox(height: 6),
-          CustomTextFormField(
-            controller: TextEditingController(),
-            obscureText: true,
+          LabelTextFieldPassword(
+            title: AppStrings.password,
             hint: AppStrings.enterYourPassword,
-            suffix: IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.remove_red_eye),
-            ),
-            keyboardType: TextInputType.visiblePassword,
+            obscureText: true,
+            onPressed: () {},
+            controller: TextEditingController(),
           ),
         ],
       ),

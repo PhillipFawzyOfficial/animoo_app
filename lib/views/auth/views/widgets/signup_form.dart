@@ -1,9 +1,8 @@
-import 'package:animoo_app/core/utils/app_colors.dart';
 import 'package:animoo_app/core/utils/app_strings.dart';
-import 'package:animoo_app/core/utils/app_style.dart';
-import 'package:animoo_app/core/widgets/custom_text_form_field.dart';
+import 'package:animoo_app/views/auth/views/widgets/image_select.dart';
+import 'package:animoo_app/views/auth/views/widgets/label_text_field.dart';
+import 'package:animoo_app/views/auth/views/widgets/label_text_field_password.dart';
 import 'package:animoo_app/views/auth/views/widgets/password_rules.dart';
-import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 
 class SignupForm extends StatelessWidget {
@@ -18,94 +17,52 @@ class SignupForm extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(AppStrings.firstName, style: AppStyle.labelStyle),
-          SizedBox(height: 6),
-          CustomTextFormField(
-            controller: TextEditingController(),
+          LabelTextField(
+            title: AppStrings.firstName,
             hint: AppStrings.enterYourFirstName,
-            keyboardType: TextInputType.emailAddress,
+            keyboardType: TextInputType.text,
+            controller: TextEditingController(),
           ),
           SizedBox(height: 16),
-          Text(AppStrings.lastName, style: AppStyle.labelStyle),
-          SizedBox(height: 6),
-          CustomTextFormField(
-            controller: TextEditingController(),
+          LabelTextField(
+            title: AppStrings.lastName,
             hint: AppStrings.enterYourLastName,
-            keyboardType: TextInputType.emailAddress,
+            keyboardType: TextInputType.text,
+            controller: TextEditingController(),
           ),
           SizedBox(height: 16),
-          Text(AppStrings.email, style: AppStyle.labelStyle),
-          SizedBox(height: 6),
-          CustomTextFormField(
-            controller: TextEditingController(),
+          LabelTextField(
+            title: AppStrings.email,
             hint: AppStrings.enterYourEmailAddress,
             keyboardType: TextInputType.emailAddress,
+            controller: TextEditingController(),
           ),
           SizedBox(height: 16),
-          Text(AppStrings.phone, style: AppStyle.labelStyle),
-          SizedBox(height: 6),
-          CustomTextFormField(
-            controller: TextEditingController(),
+          LabelTextField(
+            title: AppStrings.phone,
             hint: AppStrings.enterYourPhone,
-            keyboardType: TextInputType.emailAddress,
+            keyboardType: TextInputType.number,
+            controller: TextEditingController(),
           ),
           SizedBox(height: 16),
-          Text(AppStrings.password, style: AppStyle.labelStyle),
-          SizedBox(height: 6),
-          CustomTextFormField(
-            controller: TextEditingController(),
-            obscureText: true,
-            suffix: IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.remove_red_eye),
-            ),
+          LabelTextFieldPassword(
+            title: AppStrings.password,
             hint: AppStrings.enterYourPassword,
-            keyboardType: TextInputType.emailAddress,
+            obscureText: true,
+            onPressed: () {},
+            controller: TextEditingController(),
           ),
           SizedBox(height: 8),
           PasswordRules(),
-
-          Text(AppStrings.confirmPassword, style: AppStyle.labelStyle),
-          SizedBox(height: 6),
-          CustomTextFormField(
-            controller: TextEditingController(),
-            obscureText: true,
-            suffix: IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.remove_red_eye),
-            ),
+          LabelTextFieldPassword(
+            title: AppStrings.confirmPassword,
             hint: AppStrings.confirmPassword,
-            keyboardType: TextInputType.emailAddress,
+            obscureText: true,
+            onPressed: () {},
+            controller: TextEditingController(),
           ),
           SizedBox(height: 16),
-          Text(
-            AppStrings.uploadImageForYourProfile,
-            style: AppStyle.labelStyle,
-          ),
-          SizedBox(height: 8),
-          SizedBox(
-            width: double.infinity,
-            height: 200,
-            child: DottedBorder(
-              options: RoundedRectDottedBorderOptions(
-                strokeWidth: 1.5,
-                color: AppColors.primaryColor,
-                radius: Radius.circular(10),
-                dashPattern: [2, 2],
-                padding: EdgeInsets.all(16),
-              ),
-              child: Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(Icons.image, size: 28, color: AppColors.primaryColor),
-                    SizedBox(height: 16),
-                    Text(AppStrings.selectFile, style: AppStyle.imageSelect),
-                  ],
-                ),
-              ),
-            ),
-          ),
+          ImageSelect(),
         ],
       ),
     );
