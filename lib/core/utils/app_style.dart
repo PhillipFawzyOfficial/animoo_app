@@ -7,6 +7,11 @@ class AppStyle {
     fontFamily: AppFonst.otamaEp,
     fontWeight: FontWeight.w400,
   );
+  static final TextStyle subtitleAuthStyle = TextStyle(
+    fontSize: 14,
+    color: Color(0xff696969),
+  );
+  
   static final TextStyle labelStyle = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w400,

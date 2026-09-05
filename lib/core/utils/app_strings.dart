@@ -35,4 +35,9 @@ class AppStrings {
   //! Forget Password String
 
   static const String back = 'Back';
+  static const String forgetYourPassword = 'Forget Your Password ?';
+  static const String
+  pleaseEnterTheEmailAddressAssociatedWithYourAccountAndWellSendYouOTPToResetYourPassword =
+      'Please enter the email address associated with your account, and we\'ll send you OTP to reset your password.';
+  static const String sendCode = 'Send  Code';
 }
