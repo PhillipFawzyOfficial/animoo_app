@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:animoo_app/views/auth/views/create_new_password.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 
@@ -31,6 +32,11 @@ class CustomOtpPinput extends StatelessWidget {
           keyboardType: TextInputType.number,
           onCompleted: (value) {
             log(value);
+            //? remove this after add API and sent Function to OtpViewBody
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => CreateNewPassword()),
+            );
           },
           onTapOutside: (event) {
             FocusScope.of(context).unfocus();

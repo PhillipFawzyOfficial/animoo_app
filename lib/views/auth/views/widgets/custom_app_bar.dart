@@ -1,11 +1,10 @@
 import 'package:animoo_app/core/utils/app_colors.dart';
-import 'package:animoo_app/core/utils/app_strings.dart';
 import 'package:animoo_app/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const CustomAppBar({super.key});
-
+  const CustomAppBar({super.key, required this.title});
+  final String title;
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -23,7 +22,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               ),
             ),
             const SizedBox(width: 8),
-            Text(AppStrings.back, style: AppStyle.appBarTitle),
+            Text(title, style: AppStyle.appBarTitle),
           ],
         ),
       ),

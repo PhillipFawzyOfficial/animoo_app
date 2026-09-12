@@ -36,7 +36,7 @@ class ForgetPasswordViewBody extends StatelessWidget {
           CustomElevatedButton(
             text: AppStrings.sendCode,
             onPressed: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => OtpView()),
               );

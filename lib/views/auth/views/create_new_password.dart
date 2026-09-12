@@ -1,16 +1,16 @@
 import 'package:animoo_app/core/utils/app_strings.dart';
+import 'package:animoo_app/views/auth/views/widgets/create_new_password_body.dart';
 import 'package:animoo_app/views/auth/views/widgets/custom_app_bar.dart';
-import 'package:animoo_app/views/auth/views/widgets/otp_view_body.dart';
 import 'package:flutter/material.dart';
 
-class OtpView extends StatelessWidget {
-  const OtpView({super.key});
+class CreateNewPassword extends StatelessWidget {
+  const CreateNewPassword({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       appBar: CustomAppBar(title: AppStrings.cancel),
-      body: OtpViewBody(),
+      body: CreateNewPasswordBody(),
     );
   }
 }
