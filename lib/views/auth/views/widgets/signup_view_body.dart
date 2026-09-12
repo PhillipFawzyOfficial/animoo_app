@@ -23,7 +23,7 @@ class SignupViewBody extends StatelessWidget {
               TitleAuth(title: AppStrings.signUp),
               SignupForm(formKey: GlobalKey()),
               SizedBox(height: 31),
-              CustomElevatedButton(text: AppStrings.signUp),
+              CustomElevatedButton(text: AppStrings.signUp, onPressed: () {}),
               SizedBox(height: 8),
               AccountAlready(),
               SizedBox(height: 20),

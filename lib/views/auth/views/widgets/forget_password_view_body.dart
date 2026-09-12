@@ -1,6 +1,7 @@
 import 'package:animoo_app/core/utils/app_strings.dart';
 import 'package:animoo_app/core/utils/app_style.dart';
 import 'package:animoo_app/core/widgets/custom_elevated_button.dart';
+import 'package:animoo_app/views/auth/views/otp_view.dart';
 import 'package:animoo_app/views/auth/views/widgets/label_text_field.dart';
 import 'package:flutter/material.dart';
 
@@ -32,7 +33,7 @@ class ForgetPasswordViewBody extends StatelessWidget {
             controller: TextEditingController(),
           ),
           SizedBox(height: 151),
-          CustomElevatedButton(text: AppStrings.sendCode),
+          CustomElevatedButton(text: AppStrings.sendCode,onPressed: () => OtpView(),),
         ],
       ),
     );

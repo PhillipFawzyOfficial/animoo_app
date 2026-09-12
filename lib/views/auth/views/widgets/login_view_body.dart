@@ -25,7 +25,9 @@ class LoginViewBody extends StatelessWidget {
               LoginForm(formKey: GlobalKey<FormState>()),
               ForgetPassword(),
               SizedBox(height: 31),
-              CustomElevatedButton(text: AppStrings.login),
+              CustomElevatedButton(text: AppStrings.login, onPressed: () {
+                
+              },),
             ],
           ),
         ),
