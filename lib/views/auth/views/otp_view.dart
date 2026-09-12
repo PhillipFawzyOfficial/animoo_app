@@ -1,3 +1,4 @@
+import 'package:animoo_app/views/auth/views/widgets/custom_app_bar.dart';
 import 'package:animoo_app/views/auth/views/widgets/otp_view_body.dart';
 import 'package:flutter/material.dart';
 
@@ -6,6 +7,6 @@ class OtpView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: OtpViewBody());
+    return Scaffold(appBar: CustomAppBar(), body: OtpViewBody());
   }
 }
