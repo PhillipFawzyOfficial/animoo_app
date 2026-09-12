@@ -1,5 +1,4 @@
-import 'package:animoo_app/views/auth/views/widgets/forget_password_app_bar.dart';
-import 'package:animoo_app/views/auth/views/widgets/forget_password_view_body.dart';
+import 'package:animoo_app/views/auth/views/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 
 class ForgetPasswordView extends StatelessWidget {
@@ -7,9 +6,6 @@ class ForgetPasswordView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: ForgetPasswordAppBar(),
-      body: ForgetPasswordViewBody(),
-    );
+    return Scaffold(appBar: CustomAppBar(), body: CustomAppBar());
   }
 }

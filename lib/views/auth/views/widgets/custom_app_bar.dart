@@ -3,9 +3,8 @@ import 'package:animoo_app/core/utils/app_strings.dart';
 import 'package:animoo_app/core/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
-class ForgetPasswordAppBar extends StatelessWidget
-    implements PreferredSizeWidget {
-  const ForgetPasswordAppBar({super.key});
+class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const CustomAppBar({super.key});
 
   @override
   Widget build(BuildContext context) {
