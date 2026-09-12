@@ -25,6 +25,13 @@ class OtpViewBody extends StatelessWidget {
             ),
             SizedBox(height: 54),
             CustomOtpPinput(),
+            SizedBox(height: 42),
+            Center(
+              child: Text(
+                AppStrings.resendCodeIn,
+                style: TextStyle(fontSize: 12),
+              ),
+            ),
           ],
         ),
       ),
