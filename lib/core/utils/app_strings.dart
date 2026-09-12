@@ -40,4 +40,12 @@ class AppStrings {
   pleaseEnterTheEmailAddressAssociatedWithYourAccountAndWellSendYouOTPToResetYourPassword =
       'Please enter the email address associated with your account, and we\'ll send you OTP to reset your password.';
   static const String sendCode = 'Send  Code';
+
+  //! Otp String
+
+  static const String cancel = 'Cancel';
+  static const String otpVerfication = 'OTP Verfication';
+  static const String pleaseEnterThe5DigitCodeSentYourPhoneNumber =
+      'Please enter the 5 digit code sent your phone number';
+  static const String resendCodeIn = 'Resend Code In';
 }

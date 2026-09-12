@@ -33,7 +33,15 @@ class ForgetPasswordViewBody extends StatelessWidget {
             controller: TextEditingController(),
           ),
           SizedBox(height: 151),
-          CustomElevatedButton(text: AppStrings.sendCode,onPressed: () => OtpView(),),
+          CustomElevatedButton(
+            text: AppStrings.sendCode,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => OtpView()),
+              );
+            },
+          ),
         ],
       ),
     );
