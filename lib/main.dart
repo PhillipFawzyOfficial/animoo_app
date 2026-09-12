@@ -12,7 +12,11 @@ class AnimooApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: AppFonst.poppins),
+      theme: ThemeData(
+        fontFamily: AppFonst.poppins,
+        scaffoldBackgroundColor: Colors.white,
+        appBarTheme: AppBarTheme(backgroundColor: Colors.white),
+      ),
       home: SplashView(),
     );
   }
