@@ -48,4 +48,9 @@ class AppStrings {
   static const String pleaseEnterThe5DigitCodeSentYourPhoneNumber =
       'Please enter the 5 digit code sent your phone number';
   static const String resendCodeIn = 'Resend Code In';
+
+  //! Create New Password Strings
+  static const String createNewPassword = 'Create New Password';
+  static const String newPassword = 'New Password';
+  static const String enterYourNewPassword = 'Enter Your New Password';
 }
